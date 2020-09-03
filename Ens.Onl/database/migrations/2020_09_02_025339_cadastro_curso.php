@@ -18,6 +18,7 @@ class CadastroCurso extends Migration
             $table->imtext('description');
             $table->string('date1');
             $table->string('date2');
+            $table->foreign('user_id')->references('id')->on('users');
         });
     }
 
